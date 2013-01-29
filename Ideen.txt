@@ -1,0 +1,36 @@
+Open Source Projekt Blanchwood
+
+Ein Magic the Gathering Programm mit folgenden Elemente,
+
+Automatische trigger Auslösung
+Automatische Power / Thoughness Änderung
+Automatisches Abarbeiten der Interaction of Continuous Effects
+Auslösung von Keyword Aktion
+automatische Priorisierungs einschlatung / Ausschaltung
+
+Hilfe zu den einzelnen Fähigkeiten mit Verweis auf die Comrehensive Rules. 
+Mit unterschiedlichen Shuffle Methoden
+
+Draft Funktion
+Sealed Funktion
+EDH Funktion
+Highlander Funktion
+Two Headed Giants Funktion
+Dead Mans Handy Funktion
+Story Mode (from the Beginning truth the brother Wars up to now )
+
+Testfragen zur Judge Vorbereitung
+
+Tauschfunktion
+Integration von Sammelalbum 
+Indizierung des Sammelalbums
+Austausch von Informationen mit Freunden Via Sozial Media 
+Tauschvorschlagsgenerator
+
+Real Life Store Locator
+
+Playing against a AI with different difficulties
+
+A Tutorial Part where you learn how to Play Magic 
+
+Spieler Bewertungssystem. (Sterne ähnlich wie bei amazon)

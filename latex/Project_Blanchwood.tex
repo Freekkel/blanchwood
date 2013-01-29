@@ -1,0 +1,39 @@
+\documentclass[a4paper]{book}
+\usepackage[T1]{fontenc} 
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc} 
+\setcounter{secnumdepth}{2}
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{220mm}
+\setlength{\headheight}{3mm}
+\evensidemargin1mm
+\oddsidemargin1mm
+
+
+
+\begin{document} 
+	
+
+
+\input{front/title} 
+
+
+\frontmatter 
+	\input{frontmatter/preface} 
+	\input{frontmatter/table_of_contents} 
+ 
+\mainmatter 
+	\input{mainmatter/chapter_1} 
+	\input{mainmatter/chapter_2} 
+	\input{mainmatter/chapter_3} 
+	\input{mainmatter/chapter_4} 
+ 
+\backmatter 
+	\input{backmatter/listoffigures} 
+	\input{backmatter/listoftables}
+	
+	
+
+
+\end{document}
+
