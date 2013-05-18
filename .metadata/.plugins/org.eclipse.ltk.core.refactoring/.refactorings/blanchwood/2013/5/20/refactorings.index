@@ -1,0 +1,13 @@
+1368912435664	Encapsulate field 'edition'
+1368912442875	Encapsulate field 'artist'
+1368912449196	Encapsulate field 'anecdote'
+1368912457427	Encapsulate field 'textField'
+1368912461449	Encapsulate field 'collectorsNumber'
+1368912470076	Encapsulate field 'permanent'
+1368912677449	Encapsulate field 'basicLand'
+1368914123530	Encapsulate field 'subtype'
+1368914128375	Encapsulate field 'supertype'
+1368915894282	Rename type 'Land'
+1368916269239	Infer generic type arguments
+1368916504021	Encapsulate field 'isBasicLand'
+1368917910721	Encapsulate field 'counter'

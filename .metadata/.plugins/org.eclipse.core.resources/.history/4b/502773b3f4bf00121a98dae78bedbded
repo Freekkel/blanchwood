@@ -1,0 +1,41 @@
+
+public class card {
+
+	private String name = "";
+	private String type = "";
+	private int ownerNumber = 0;
+	private int controllerNumber = 0;
+	
+	
+	String getName(){
+		return name;
+	}
+	
+	void setName(String newName){
+		this.name = newName;
+	}
+	
+	String getType(){
+		return type;
+	}
+	
+	void setType(String newType){
+		this.type = newType;
+	}
+	
+	int getOwnerNumber(){
+		return ownerNumber;
+	}
+	
+	void setOwnerNumber(int newOwner){
+		this.ownerNumber = newOwner;
+	}
+	
+	int getControllerNumber(){
+		return controllerNumber;
+	}
+	
+	void setControllerNumber(int newController){
+		this.controllerNumber = newController;
+	}
+}

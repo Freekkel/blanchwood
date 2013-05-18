@@ -1,0 +1,25 @@
+
+public class Land extends Card{
+
+	private boolean basicLand = true;
+	
+	
+	public Land(String name, String type, String zone, String edition,
+			String artist, String anecdote, String textField,
+			int collectorsNumber, boolean legendary, boolean permanent, boolean basic) {
+		super(name, type, zone, edition, artist, anecdote, textField, collectorsNumber,
+				legendary, permanent);
+		setBasicLand(basic);
+		
+	}
+
+
+	public boolean isBasicLand() {
+		return basicLand;
+	}
+
+	public void setBasicLand(boolean basicLand) {
+		this.basicLand = basicLand;
+	}
+
+}

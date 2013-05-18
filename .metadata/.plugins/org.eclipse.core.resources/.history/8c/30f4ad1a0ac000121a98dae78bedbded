@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+
+
+public class BasicLand extends Card {
+
+
+	private boolean basicLand = true;
+
+	
+	public BasicLand(String name, ArrayList<String> type, ArrayList<String> subtype,
+			ArrayList<String> supertype, String zone, String edition,
+			String artist, String anecdote, String textField,
+			int collectorsNumber, boolean legendary, boolean permanent) {
+		super(name, type, subtype, supertype, zone, edition, artist, anecdote,
+				textField, collectorsNumber, legendary, permanent);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	
+	
+	public String produceMana() {
+		for(int i = 0; i < subtype.size(); i++){
+			
+		}
+		return name;
+	}
+
+	public boolean isBasicLand() {
+		return basicLand;
+	}
+
+	public void setBasicLand(boolean basicLand) {
+		this.basicLand = basicLand;
+	}
+
+}

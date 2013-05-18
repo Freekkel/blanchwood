@@ -1,0 +1,187 @@
+import java.util.ArrayList;
+
+public class Card {
+
+	protected String name = "";
+	private ArrayList<String> type = new ArrayList<String>();
+	private String zone = "";
+	private String edition = "";
+	private String artist = "";
+	private String anecdote = "";
+	private String textField = "";
+	private int collectorsNumber = 0;
+	private boolean legendary = false;
+	private boolean permanent = true;
+
+	// For Multiplayer Game Support
+	private int ownerNumber = 0;
+	private int controllerNumber = 0;
+
+	// CC in the normal ways
+	private int whiteCC = 0;
+	private int blueCC = 0;
+	private int blackCC = 0;
+	private int redCC = 0;
+	private int greenCC = 0;
+	// this should be enough variable for possible colorlessCC
+	private String[] colorlessCC = new String[26];
+	// Hybrid CC combinations
+	private int wuCC = 0;
+	private int wbCC = 0;
+	private int wrCC = 0;
+	private int wgCC = 0;
+	private int ubCC = 0;
+	private int urCC = 0;
+	private int ugCC = 0;
+	private int brCC = 0;
+	private int bgCC = 0;
+	private int rgCC = 0;
+
+	public Card(String name, String type, String zone, String edition,
+			String artist, String anecdote, String textField,
+			int collectorsNumber, boolean legendary, boolean permanent) {
+		for (int i = 0; i < colorlessCC.length; i++) {
+			this.colorlessCC[i] = "0";
+		}
+		this.setName(name);
+		this.setType(type);
+		this.setZone(zone);
+		this.setEdition(edition);
+		this.setArtist(artist);
+		this.setAnecdote(anecdote);
+		this.setTextField(textField);
+		this.setCollectorsNumber(collectorsNumber);
+		this.setLegendary(legendary);
+		this.setPermanent(permanent);
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(String newName) {
+		this.name = newName;
+	}
+
+	public ArrayList<String> getType() {
+		return this.type;
+	}
+
+	public void setType(String newType) {
+		type.add(newType);
+	}
+
+	public String getZone() {
+		return this.zone;
+	}
+
+	public void setZone(String newZone) {
+		this.zone = newZone;
+	}
+
+	public void setLegendary(boolean legendary) {
+		this.legendary = legendary;
+	}
+
+	public boolean getLegendary() {
+		return this.legendary;
+	}
+
+	public int getOwnerNumber() {
+		return this.ownerNumber;
+	}
+
+	public void setOwnerNumber(int newOwner) {
+		this.ownerNumber = newOwner;
+	}
+
+	public int getControllerNumber() {
+		return this.controllerNumber;
+	}
+
+	public void setControllerNumber(int newController) {
+		this.controllerNumber = newController;
+	}
+
+	// set X if its just one
+	public void setColorlessCC(int x) {
+		this.colorlessCC[0] = String.valueOf(x);
+	}
+
+	// set A to Z if there are multiple possibilities to make choices.
+	public void setColorlessCC(String s) {
+		for (int i = 0; i < colorlessCC.length; i++) {
+			if (colorlessCC[i] != "0") {
+				this.colorlessCC[i] = s;
+			}
+		}
+	}
+
+	public int getTotalCCSpell() {
+		int colorlessCCCount = 0;
+		for (int i = 0; i < this.colorlessCC.length; i++) {
+			colorlessCCCount = colorlessCCCount
+					+ Integer.parseInt(this.colorlessCC[i].toString());
+		}
+		int total = 0;
+		total = whiteCC + blueCC + blackCC + redCC + greenCC + colorlessCCCount
+				+ wuCC + wbCC + wrCC + wgCC + ubCC + urCC + ugCC + brCC + bgCC
+				+ rgCC;
+		return total;
+	}
+
+	public int getTotalCCCard() {
+		int i = 0;
+		i = whiteCC + blueCC + blackCC + redCC + greenCC + wuCC + wbCC + wrCC
+				+ wgCC + ubCC + urCC + ugCC + brCC + bgCC + rgCC;
+		return i;
+	}
+
+	public String getEdition() {
+		return edition;
+	}
+
+	public void setEdition(String edition) {
+		this.edition = edition;
+	}
+
+	public String getArtist() {
+		return artist;
+	}
+
+	public void setArtist(String artist) {
+		this.artist = artist;
+	}
+
+	public String getAnecdote() {
+		return anecdote;
+	}
+
+	public void setAnecdote(String anecdote) {
+		this.anecdote = anecdote;
+	}
+
+	public String getTextField() {
+		return textField;
+	}
+
+	public void setTextField(String textField) {
+		this.textField = textField;
+	}
+
+	public int getCollectorsNumber() {
+		return collectorsNumber;
+	}
+
+	public void setCollectorsNumber(int collectorsNumber) {
+		this.collectorsNumber = collectorsNumber;
+	}
+
+	public boolean isPermanent() {
+		return permanent;
+	}
+
+	public void setPermanent(boolean permanent) {
+		this.permanent = permanent;
+	}
+}
